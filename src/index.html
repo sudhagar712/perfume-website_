@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <!-- Favicon-icon -->
+    <link rel="icon" href="/src/Assests/Images/favicon.png" />
+    <!-- remix-icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+      integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <title>perfume||Website</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="navbar" class="bg-bodyColor fixed w-full top-0 z-50 ">
+      <nav class="container flex justify-between items-center h-16 sm:h-20">
+        <div class="font-DancingScript text-2xl sm:text-5xl"><a href="#">MSR Perfume</a></div>
+        <!-- Nav-menu -->
+        <div
+          id="nav-menu"
+          class="bg-cardColor absolute top-0 left-[-100%] min-h-[80px] w-full h-[80vh] flex items-center justify-center duration-300 md:static md:min-h-fit md:w-auto md:bg-transparent"
+        >
+          <ul class="flex flex-col md:flex-row items-center gap-8">
+            <li><a href="#hero" class="Nav-link active">Home</a></li>
+            <li><a href="#collection" class="Nav-link">Collection</a></li>
+            <li><a href="#popular" class="Nav-link">Popular</a></li>
+            <li><a href="#about" class="Nav-link">About</a></li>
+          </ul>
+        </div>
+
+        <!--  -->
+        <div class="md:hidden text-xl sm:text-2xl z-50 cursor-pointer">
+          <i class="ri-menu-2-line" id="hamburger"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!--,,,,,,,,,,,,,,,,,,,,,,, Hero Section,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, -->
+      <div
+        id="hero"
+        class="container relative mt-16 sm:mt-20 py-10 xl:min-h-screen"
+      >
+        <!-- <div
+          class=" absolute top-[40%]  xl:top-[-30px] xl:right-[40%] sm:top-[20px] left-1/2 transform-translate-x-1/2 - translate-y-1/2 -z-10 md:top-[45%] lg:top-1/2"
+        >
+          <p
+            class="text-[124px] sm:text-[50px]  leading-none font-black text-[#241826] opacity-50"
+          >
+            FRA <br />
+            GRA <br />
+            NCE
+          </p>
+        </div> -->
+
+        <div class="flex flex-col item-center text-center">
+          <div
+            class="hero_bigtext text-[45px] sm:text-[70px] font-bold uppercase hover:text-[#241826] cursor-pointer md:text-[90px] lg:text-[120px] xl:text-[180px]"
+          >
+            celestia
+          </div>
+
+          <div class="hero_image relative -mt-16 sm:mt-19 md:-mt-32 xl:-mt-52">
+            <img
+              src="/src/Assests/Images/hero.png"
+              alt=""
+              class="  w-full mx-auto md:w-1/2 lg:w-1/3 xl:w-1/2"
+            />
+            <p
+              class="absolute bottom-[20%] left-[10px] transform-translate-x-1/2 -translate-y-1/2 w-full text-center text-4xl font-bold font-DancingScript xl:text-[65px]"
+            >
+              Made of StarDust
+            </p>
+          </div>
+
+          <div
+            class=" hero_content flex flex-col items-center w-full gap-5 md:justify-between md:gap-1 md:flex-row"
+          >
+            <p class="max-w-80">
+              celestia is Unique Perfurme , drawn from the rarest meteorites,
+              and is the one only one to be sourced from the stars
+            </p>
+            <button class="btn">Try Now</button>
+            <p class="max-w-80 md:text-right">
+              celestia is Unique Perfurme , drawn from the rarest meteorites,
+              and is the one only one to be sourced from the stars
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ..........................collection....................................... -->
+      <section id="collection" class="bg-sectionColor">
+        <div class="container">
+          <div
+            class="collection_top flex flex-col items-center gap-3 text-center mb-20 md:md-28"
+          >
+            <h2 class="title text-titleColor">collection</h2>
+            <p class="subtitle max-w-2xl">Things you need to know</p>
+          </div>
+
+          <!-- card container -->
+          <div
+            class=" w-full collection_top grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-8"
+          >
+            <!-- card 1 -->
+            <div class=" shadow-lg shadow-titleColor collection_card relative bg-cardColor rounded-xl px-10 py-20">
+              <img
+                src="/src/Assests/Images/collection-1.png"
+                alt=""
+                class="w-40 absolute -top-20 left-0"
+              />
+              <div class="space-y-5">
+                <h2 class="cardtitle">Real Stardust</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis rem consectetur.
+                </p>
+              </div>
+
+              <div
+                class="w-20 h-20 bg-titleColor rounded-full flex items-center justify-center text-2xl border-8 border-sectionColor absolute -right-3 -bottom-3"
+              >
+                <i
+                  class="ri-arrow-right-circle-line hover:translate-x-1 duration-300"
+                ></i>
+              </div>
+            </div>
+
+            <!-- card2  -->
+            <div class="shadow-lg shadow-titleColor collection_card relative bg-cardColor rounded-xl px-10 py-20">
+              <img
+                src="/src/Assests/Images/collection-2.png"
+                alt=""
+                class="w-40 absolute -top-20 left-0"
+              />
+              <div class="space-y-5">
+                <h2 class="cardtitle">New Stardust</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis rem consectetur.
+                </p>
+              </div>
+
+              <div
+                class="w-20 h-20 bg-titleColor rounded-full flex items-center justify-center text-2xl border-8 border-sectionColor absolute -right-3 -bottom-3"
+              >
+                <i
+                  class="ri-arrow-right-circle-line hover:translate-x-1 duration-300"
+                ></i>
+              </div>
+            </div>
+
+            <!-- card3 -->
+            <div class="shadow-lg shadow-titleColor  collection_card relative bg-cardColor rounded-xl px-10 py-20">
+              <img
+                src="/src/Assests/Images/collection-3.png"
+                alt=""
+                class="w-40 absolute -top-20 left-0"
+              />
+              <div class="space-y-5">
+                <h2 class="cardtitle">PerfumeX Stardust</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis rem consectetur.
+                </p>
+              </div>
+
+              <div
+                class="w-20 h-20 bg-titleColor rounded-full flex items-center justify-center text-2xl border-8 border-sectionColor absolute -right-3 -bottom-3"
+              >
+                <i
+                  class="ri-arrow-right-circle-line hover:translate-x-1 duration-300"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--.......................... Popular Section.............................................. -->
+
+      <section id="popular">
+        <div class="container">
+          <!-- Section Title -->
+          <div
+            class=" popular_top flex flex-col items-center gap-3 text-center mb-20 md:md-28"
+          >
+            <h2 class="title text-titleColor">Popular</h2>
+            <p class="subtitle max-w-2xl">Things you need to know</p>
+          </div>
+
+          <!-- Content -->
+          <div class="flex flex-col md:flex-row items-center gap-5 lg:gap-10">
+            <!-- card 1 -->
+            <div
+              class= "shadow-lg shadow-titleColor  popular_card bg-cardColor w-full py-5 px-3 md:px-10 md:py-8 xl:py-10 xl:px-15 flex justify-between items-center md:w-1/2"
+            >
+              <div class="w-3/5">
+                <div class="max-w-56 xl:max-w-full">
+                  <p class="uppercase text-xs xl:text-base pb-2">
+                    Top Staff pick
+                  </p>
+                  <p class="uppercase cardtitle-2">best collection</p>
+                  <div class="my-3 md:my-5">
+                    Use Code : Lightcode Get <br />
+                    25% off for all items !
+                  </div>
+                  <button class="btn2 mt-5">Shop Now</button>
+                </div>
+              </div>
+              <div class="w-2/5">
+                <img
+                  src="./Assests/Images/popular-1.png"
+                  alt=""
+                  class="ml-auto w-full"
+                />
+              </div>
+            </div>
+
+            <!-- card2 -->
+            <div
+              class="shadow-lg shadow-titleColor popular_card bg-cardColor w-full py-5 px-3 md:px-10 md:py-8 xl:py-10 xl:px-15 flex justify-between items-center md:w-1/2"
+            >
+              <div class="w-3/5">
+                <div class="max-w-56 xl:max-w-full">
+                  <p class="uppercase text-xs xl:text-base pb-2">
+                    Top Staff pick
+                  </p>
+                  <p class="uppercase cardtitle-2">best collection</p>
+                  <div class="my-3 md:my-5">
+                    Use Code : Lightcode Get <br />
+                    25% off for all items !
+                  </div>
+                  <button class="btn2 mt-5">Shop Now</button>
+                </div>
+              </div>
+              <div class="w-2/5">
+                <img
+                  src="./Assests/Images/popular-2.png"
+                  alt=""
+                  class="ml-auto w-full"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- card3 -->
+          <div
+            class=" shadow-lg shadow-titleColor popular_card bg-cardColor text-center mt-5 lg:mt-10 py-10 px-3 bg-cover bg-center"
+            style="
+              background-image: linear-gradient(to right, #33003390, #330033),
+                url('./Assests/Images/popular_banner.jpg');
+            "
+          >
+            <div>
+              <p class="sm:max-w-72 mx-auto">Collection Arrived</p>
+              <p class="my-3 md:my-5">
+                You have no items & Are you ready to use? come & Shop with Us!
+              </p>
+              <p>Price from : <span class=""> Rs.2500/-</span></p>
+              <button class="btn2 mt-10">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--..............................Banner Section............................................... -->
+
+      <section class="bg-cardColor">
+        <div class="container">
+          <div class="flex flex-col lg:flex-row justify-between gap-10">
+            <!-- item1 -->
+            <div class="flex-1 flex gap-5 max-w-md">
+              <div class="text-5xl">
+                <i class="ri-plane-line"></i>
+              </div>
+              <div class="space-y-4">
+                <p class="uppercase font-bold">India Free Delivery</p>
+                <p class="leading-relaxed">
+                  Free Delivery on all order from EU with price more than
+                  Rs.1000/-
+                </p>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="flex-1 flex gap-5 max-w-md">
+              <div class="text-5xl">
+                <i class="ri-arrow-go-back-line"></i>
+              </div>
+              <div class="space-y-4">
+                <p class="uppercase font-bold">Money Guareentee</p>
+                <p class="leading-relaxed">
+                  30Days Money Back guarneete no question asked!
+                </p>
+              </div>
+            </div>
+            <!-- item 3 -->
+            <div class="flex-1 flex gap-5 max-w-md">
+              <div class="text-5xl">
+                <i class="ri-lock-2-line"></i>
+              </div>
+              <div class="space-y-4">
+                <p class="uppercase font-bold">online support 24/7</p>
+                <p class="leading-relaxed">
+                  we're here to support to you. Let's Shopping now!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--.............................................About Section................ -->
+
+      <section id="about">
+        <div class="container">
+          <!-- Title  -->
+          <div
+            class=" about_top flex flex-col items-center gap-3 text-center mb-20 md:md-28"
+          >
+            <h2 class="title text-titleColor">About Celestia</h2>
+            <p class="subtitle max-w-2xl">Things you need to know</p>
+          </div>
+
+          <!--  -->
+          <div
+            class="flex flex-col md:flex-row items-start xl:items-center gap-5 lg:gap-10 mt-20"
+          >
+            <div class="about_left">
+              <img src="./Assests/Images/about.png" alt="" />
+            </div>
+
+            <div class=" about_right w-full md:w-1/2">
+              <p class="uppercase text-xs xl:text-base">Top staff pick</p>
+              <p class="cardtitle-2">Best Collection</p>
+              <p class="mt-3 md:mt-5">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Blanditiis dolore fugit aliquid, odit architecto reprehenderit
+                nisi nam velit adipisci laboriosam voluptas illo laborum sunt
+                fuga placeat mollitia id nulla totam.
+              </p>
+              <br />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corporis ut error suscipit animi voluptate, facere in possimus
+                veniam sint voluptatibus est corrupti quia repellendus. Esse,
+                earum. Laborum nostrum recusandae quos.
+              </p>
+              <button class="btn2 mt-5 lg:mt-10">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ...................................Footer............................................ -->
+
+      <footer class="container py-10">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+          <div class="w-full md:w-1/2">
+            <p class="cardtitle">News Letter</p>
+            <p>
+              Sign up for our free Video Course and Urban garden inspiration
+            </p>
+          </div>
+
+          <div class="w-full md:w-1/2">
+            <div class="flex flex-col md:flex-row gap-2">
+              <input
+                class="w-full px-5 py-3 text-bodyColor outline-none"
+                type="email"
+                placeholder="Enter your email Address...."
+              />
+              <button class="btn2">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <p class="text-center mt-10 opacity-30">
+          Copyrights &copy; 2024 sudhagarDEV. All rights reserved.
+        </p>
+      </footer>
+
+      <!-- ....................................ScrollUp....................................................... -->
+
+      <a
+        href="#"
+        id="scroll-up"
+        class="fixed right-10 -bottom-1/2 bg-titleColor border-x-white border-2 px-2 py-1 md:px-4 md:py-2 rounded-full text-lg md:text-lg z-50 hover:-translate-y-1 ease-in duration-300"
+      >
+        <i class="ri-arrow-up-double-fill"></i>
+      </a>
+
+      <!-- whatapps icons -->
+      <!-- <a
+        href="#"
+        class="fixed top-[100px] left-0 rounded-full bg-green-400 px-2 py-1 md:px-4 md:py-2 text-xs md:text-lg z-50"
+      >
+        <i class="ri-whatsapp-line text-3xl"></i>
+      </a> -->
+    </main>
+
+    <script src="./main.js"></script>
+    <script src="./Assests/scrollreveal.min.js"></script>
+  </body>
+</html>
